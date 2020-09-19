@@ -8,7 +8,11 @@ function Popup({ selected, closePopup }) {
           {selected.Title} <span>{selected.Year}</span>
           <p className="rating">Rating: {selected.imdbRating}</p>
           <div className="plot">
-            <img src={selected.Poster} alt="popup-poster" />
+            <img
+              src={selected.Poster}
+              alt="popup-poster"
+              className="image-popup"
+            />
             <p>{selected.Plot}</p>
           </div>
           <button className="close" onClick={closePopup}>

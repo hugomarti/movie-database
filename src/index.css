@@ -6,7 +6,7 @@
 
 body {
   font-family: "montserrat", sans-serif;
-  background-color: #223343;
+  background-color: #eff0f3;
 }
 
 header {
@@ -14,7 +14,7 @@ header {
 }
 
 header h1 {
-  color: #fff;
+  color: #0d0d0d;
   font-size: 48px;
   font-weight: 500;
   text-align: center;
@@ -39,10 +39,10 @@ section {
   outline: none;
   background: none;
 
-  background-color: #eee;
+  background-color: #fffffe;
   border-radius: 8px;
 
-  color: #53565a;
+  color: #2a2a2a;
   font-size: 20px;
   font-weight: 300;
 
@@ -50,13 +50,17 @@ section {
 }
 
 .searchbox:focus {
-  box-shadow: 0px 0px 8px 3px #4484c4;
+  box-shadow: 0px 0px 8px 3px #ff8e3c;
 }
 
 .results {
   display: flex;
   flex-wrap: wrap;
   margin: 0px -15px;
+}
+
+.result {
+  border-radius: 8px;
 }
 
 .results .result {
@@ -71,20 +75,23 @@ section {
 .results .result img {
   display: block;
   width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .results .result h3 {
-  color: #fff;
+  color: #0d0d0d;
   font-size: 20px;
   font-weight: 600;
   padding: 10px;
-  background: #445565;
+  background: #fffffe;
   flex: 1 1 100%;
   transition: 0.4s ease-out;
+  border-radius: 8px;
 }
 
 .results .result:hover h3 {
-  background: #fff;
+  background: #fffffe;
   color: #223343;
 }
 
@@ -94,7 +101,7 @@ section {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #445565;
+  background-color: #eff0f3;
 
   overflow: scroll;
 }
@@ -106,7 +113,7 @@ section {
   margin: 0 auto;
   padding: 25px;
 
-  color: #fff;
+  color: #0d0d0d;
 }
 
 .popup .content h2 {
@@ -149,8 +156,8 @@ section {
   font-size: 18px;
   font-weight: 700;
 
-  background: #4484c4;
-  color: #fff;
+  background: #ff8e3c;
+  color: #0d0d0d;
   border-radius: 8px;
   border: none;
   outline: none;
@@ -161,5 +168,5 @@ section {
 }
 
 .popup .content .close:hover {
-  background: #223343;
+  background: #d47b3b;
 }
